@@ -1,6 +1,6 @@
 ##### My NIO-based mini tomcat.
 
-The specific process is basically the same with the former one--->[https://github.com/pimithie/MyMiniTomcatVersion1](My BIO-based mini tomcat)
+The specific process is basically the same with the former one--->[https://github.com/pimithie/MyMiniTomcatVersion1]()
 
 ---
 
