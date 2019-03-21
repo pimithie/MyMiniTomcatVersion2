@@ -15,9 +15,9 @@ import java.util.Set;
  * NIO-based mini tomcat implementation
  * 基于NIO的mini版tomcat的实现
  */
-public class MyTomcatStarter2 {
+public class MyNIOTomcatStarter {
 
-    private static final Logger logger = LoggerFactory.getLogger(MyTomcatStarter2.class);
+    private static final Logger logger = LoggerFactory.getLogger(MyNIOTomcatStarter.class);
 
     private static final int PORT = 8080;
     /**
@@ -78,7 +78,7 @@ public class MyTomcatStarter2 {
         readBuffer.clear();
         int length = 0;
         // read the http request 读取http请求
-        System.out.println("http request：");
+        logger.info("http request：");
         while ((length = socketChannel.read(readBuffer)) > 0){
             readBuffer.flip();
             System.out.print(new String(readBuffer.array()));
